@@ -28,11 +28,9 @@
      NSArray* supportedOrientations = [strOrientations componentsSeparatedByString:@","];
      */
 
-#ifdef CORDOVA_FRAMEWORK
     CDVViewController* cont = (CDVViewController*)[ super viewController ];
     childBrowser.supportedOrientations = cont.supportedOrientations;
     [ cont presentModalViewController:childBrowser animated:YES ];
-#endif
 
     NSString *url = (NSString*) [arguments objectAtIndex:0];
 

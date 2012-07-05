@@ -10,10 +10,7 @@
 #endif
 #import "ChildBrowserViewController.h"
 
-
-#ifdef CORDOVA_FRAMEWORK
-    @interface ChildBrowserCommand : CDVPlugin <ChildBrowserDelegate>  {
-#endif
+@interface ChildBrowserCommand : CDVPlugin <ChildBrowserDelegate>  {
     ChildBrowserViewController* childBrowser;
 }
 
